@@ -1,10 +1,14 @@
 # time-to-go-home
 Simple command line app which calculates your working periods
 
+## Pre requisites
+sudo apt install python-pip  
+
+** After, install "datetime" package **
+pip install datetime  
+
 ## Installing (Debian-based distributions only)
 
-sudo apt install python-pip  
-pip install datetime  
 mkdir ~/.local/bin  
 cd ~/.local/bin  
 git clone https://github.com/mrgurgel/time-to-go-home.git  
