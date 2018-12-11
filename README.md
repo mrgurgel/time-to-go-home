@@ -1,6 +1,10 @@
 # time-to-go-home
 Simple command line app which calculates and sum your working periods
 
+## Screenshot
+![Time to go home screenshot](https://raw.githubusercontent.com/mrgurgel/time-to-go-home/master/misc/images/time-to-go-home.png)
+
+
 ## Pre requisites
 sudo apt install python-pip  
 
