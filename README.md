@@ -3,16 +3,16 @@ Simple command line app which calculates your working periods
 
 ## Installing (Debian-based distributions only)
 
-sudo apt install python-pip
-pip install datetime
-mkdir ~/.local/bin
-cd ~/.local/bin
-git clone https://github.com/mrgurgel/time-to-go-home.git
-echo -e '#!/bin/bash\npython3 ~/.local/bin/time-to-go-home/lifter/calculator.py' >> calculate-time-go-home
-chmod +x ~/.local/bin/calculate-time-go-home
+sudo apt install python-pip &nbsp;
+pip install datetime &nbsp;
+mkdir ~/.local/bin &nbsp;
+cd ~/.local/bin &nbsp;
+git clone https://github.com/mrgurgel/time-to-go-home.git &nbsp;
+echo -e '#!/bin/bash\npython3 ~/.local/bin/time-to-go-home/lifter/calculator.py' >> calculate-time-go-home &nbsp;
+chmod +x ~/.local/bin/calculate-time-go-home &nbsp;
 
 
 ## Removing
 
-rm ~/.local/bin/calculate-time-go-home
-rm -rf ~/.local/bin/time-to-go-home
+rm ~/.local/bin/calculate-time-go-home &nbsp;
+rm -rf ~/.local/bin/time-to-go-home &nbsp;
