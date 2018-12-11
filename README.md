@@ -4,7 +4,6 @@ Simple command line app which calculates your working periods
 ## Pre requisites
 sudo apt install python-pip  
 
-** After, install "datetime" package **
 pip install datetime  
 
 ## Installing (Debian-based distributions only)
