@@ -17,7 +17,7 @@ For the input ``10:08, 12:09, 13:57`` and considering that the current time is 1
 ```
 
 ## Screenshot
-![Time to go home screenshot](https://raw.githubusercontent.com/mrgurgel/time-to-go-home/master/misc/images/time-to-go-home.png)
+![Time to go home screenshot](https://raw.githubusercontent.com/mrgurgel/time-to-go-home/master/misc/images/time-to-go-home_2.png)
 
 
 ## Pre requisites
