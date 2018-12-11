@@ -12,8 +12,12 @@ mkdir ~/.local/bin
 cd ~/.local/bin  
 git clone https://github.com/mrgurgel/time-to-go-home.git  
 echo -e '#!/bin/bash\npython3 ~/.local/bin/time-to-go-home/lifter/calculator.py' >> calculate-time-go-home  
-chmod +x ~/.local/bin/calculate-time-go-home  
+chmod +x ~/.local/bin/calculate-time-go-home
 
+## Using
+
+**Execute:**  
+``calculate-time-go-home``
 
 ## Removing
 
