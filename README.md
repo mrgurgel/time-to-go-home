@@ -45,5 +45,3 @@ chmod +x ~/.local/bin/calculate-time-go-home
 ```rm ~/.local/bin/calculate-time-go-home  
 rm -rf ~/.local/bin/time-to-go-home   
 ```
-
-teste
