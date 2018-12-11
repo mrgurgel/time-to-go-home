@@ -43,5 +43,5 @@ chmod +x ~/.local/bin/calculate-time-go-home
 ## Removing
 
 ```rm ~/.local/bin/calculate-time-go-home  
-rm -rf ~/.local/bin/time-to-go-home
+rm -rf ~/.local/bin/time-to-go-home   
 ```
