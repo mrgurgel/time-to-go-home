@@ -40,7 +40,7 @@ chmod +x ~/.local/bin/calculate-time-go-home
 **Execute:**  
 ``calculate-time-go-home``
 
-or
+or  
 ``calculate-time-go-home '11:28, 13:00, 14:13'``
 
 ## Removing
