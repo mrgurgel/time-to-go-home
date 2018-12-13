@@ -1,5 +1,8 @@
 from datetime import datetime
+from colorama import Fore, Back, Style
 import sys
+
+
 
 WORKING_HOURS_IN_A_DAY = 8
 
@@ -23,10 +26,19 @@ hours_sum = datetime.strptime("00:00", "%H:%M")
 for iteracao in range(0, len(hours), 2):
     hours_sum = hours_sum + (hours[iteracao + 1] - hours[iteracao])
 
-print("I worked {:0>2d}:{:0>2d} hours".format(hours_sum.hour, hours_sum.minute))
+print(Fore.BLUE + Back.WHITE + Style.BRIGHT + "Hours worked: {:0>2d}:{:0>2d}".format(hours_sum.hour, hours_sum.minute))
+
 
 if (hours_sum.hour < WORKING_HOURS_IN_A_DAY):
     regular_worked_time = datetime.strptime("08:00", "%H:%M")
     hour_left = regular_worked_time - hours_sum
     limit_hour = (datetime.now() + hour_left)
-    print("I need to work util {:0>2d}:{:0>2d} to accomplish today's mission".format(limit_hour.hour, limit_hour.minute))
+
+    print(Fore.BLUE + Back.WHITE + Style.BRIGHT + "I can go home at: {:0>2d}:{:0>2d}".format(limit_hour.hour, limit_hour.minute))
+
+else:
+    print(Fore.BLUE + Back.WHITE + Style.BRIGHT + "I can go home")
+
+
+print(Style.RESET_ALL)
+
