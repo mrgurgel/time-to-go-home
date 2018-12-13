@@ -24,7 +24,7 @@ For the input ``10:08, 12:09, 13:57`` and considering that the current time is 1
 sudo apt install python3-pip  
 
 pip3 install datetime
-pip3 install colorama
+pip3 install cowsay
 
 
 ## Installing (Debian-based distributions only)

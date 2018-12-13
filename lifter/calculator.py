@@ -1,10 +1,9 @@
 from datetime import datetime
-from colorama import Fore, Back, Style
+import cowsay
 import sys
 
-
-
 WORKING_HOURS_IN_A_DAY = 8
+
 
 def take_the_input():
     if (len(sys.argv) > 1):
@@ -14,7 +13,7 @@ def take_the_input():
 
 
 worked_intervals = take_the_input()
-
+message = ""
 now = datetime.now()
 
 if not len(worked_intervals) % 2 == 0:
@@ -26,19 +25,18 @@ hours_sum = datetime.strptime("00:00", "%H:%M")
 for iteracao in range(0, len(hours), 2):
     hours_sum = hours_sum + (hours[iteracao + 1] - hours[iteracao])
 
-print(Fore.BLUE + Back.WHITE + Style.BRIGHT + "Hours worked: {:0>2d}:{:0>2d}".format(hours_sum.hour, hours_sum.minute))
-
+message += "\nYou worked {:0>2d}:{:0>2d} hours".format(hours_sum.hour, hours_sum.minute)
 
 if (hours_sum.hour < WORKING_HOURS_IN_A_DAY):
     regular_worked_time = datetime.strptime("08:00", "%H:%M")
     hour_left = regular_worked_time - hours_sum
     limit_hour = (datetime.now() + hour_left)
 
-    print(Fore.BLUE + Back.WHITE + Style.BRIGHT + "I can go home at: {:0>2d}:{:0>2d}".format(limit_hour.hour, limit_hour.minute))
+    message += "\nYou can go home at: {:0>2d}:{:0>2d}".format(limit_hour.hour, limit_hour.minute)
 
 else:
-    print(Fore.BLUE + Back.WHITE + Style.BRIGHT + "I can go home")
+    message += "\nYou can go home, see you tomorrow buddy"
 
 
-print(Style.RESET_ALL)
+print(cowsay.cow(message + "\n"))
 
