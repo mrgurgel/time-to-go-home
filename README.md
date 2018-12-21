@@ -48,5 +48,7 @@ or
 
 ## Removing
 
+```
 rm -rf ~/.local/bin/time-to-go-home  
-rm ~/.local/bin/calculate-time-go-home  
+rm ~/.local/bin/calculate-time-go-home 
+```
