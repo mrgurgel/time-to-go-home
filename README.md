@@ -24,13 +24,14 @@ For the input ``10:08, 12:09, 13:57`` and considering that the current time is 1
 sudo apt install python3-pip  
 
 ```
-pip3 install datetime
-pip3 install cowsay
+sudo pip3 install datetime
+sudo pip3 install cowsay
 ```
 
-## Installing (Debian-based distributions only)
+## Installing (Debian/Fedora distributions only)
 
-```mkdir ~/.local/bin  
+```
+mkdir ~/.local/bin  
 cd ~/.local/bin  
 git clone https://github.com/mrgurgel/time-to-go-home.git
 echo -e '#!/bin/bash\npython3 ~/.local/bin/time-to-go-home/lifter/calculator.py $1' >> calculate-time-go-home  
