@@ -21,9 +21,10 @@ For the input ``10:08, 12:09, 13:57`` and considering that the current time is 1
 
 
 ## Pre requisites
-sudo apt install python3-pip  
+
 
 ```
+sudo apt install python3-pip  
 sudo pip3 install datetime
 sudo pip3 install cowsay
 ```
